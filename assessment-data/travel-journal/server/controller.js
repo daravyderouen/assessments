@@ -14,7 +14,7 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
     }
 })
 
-let city_id = 6
+//let city_id = 6
 
 module.exports = {
     seed: (req, res) => {
@@ -33,11 +33,6 @@ module.exports = {
                 rating integer, 
                 country_id serial
             );
-
-            insert into cities (name, rating, country_id)
-            values ('Paris', 5, 61),
-                ('New Orleans', 5, 187),
-                ('Tokyo', 5, 86 );
 
             insert into countries (name)
             values ('Afghanistan'),
@@ -234,7 +229,13 @@ module.exports = {
             ('Vietnam'),
             ('Yemen'),
             ('Zambia'),
-            ('Zimbabwe');   
+            ('Zimbabwe'); 
+            
+            insert into cities (name, rating, country_id)
+            values ('Paris', 5, 61),
+                ('New Orleans', 5, 187),
+                ('Tokyo', 5, 86 )
+                ;  
         `).then(() => {
             console.log('DB seeded!')
             res.sendStatus(200)
