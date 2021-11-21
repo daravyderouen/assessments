@@ -1,7 +1,0 @@
-1. When you click "See all bots", you get an error on your console that states "ERROR GETTING BOTS ReferenceError: botsarr is not defined" and on the Browser side it states GET 400 Bad Request. I took a screenshot and named it "botsArrError". 
-
-2. When I dueled: it would tell me I won but logged it as a loss when it was really a loss. According to my bots stats, I should have loss by 10 pts. I took a screenshot and named it "botsDuelGameLossError.
-
-3. Notice that font's were close together. Makes it hard for people with low vision to read. 
-
-4. Played another game, the game tells me I won, but it's actually a draw but it logs this game as a loss for me. I took a screenshot of the error and named it "botsDuelGameDrawError".
